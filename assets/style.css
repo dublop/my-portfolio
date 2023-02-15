@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --purple: #a21caf;
+    --black: #1E1E24;
+    --sm: 1.8rem;
+    --md: 2.4rem;
+    --lg: 3.2rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html { 
+    font-size: 62.5%;
+}
+body {
+    color: var(--black);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+/*------------header---------------*/
+header {
+    width: 100%;
+    padding: 2rem 0;
+    font-size: var(--sm);
+}
+/*presentation_container - nav*/
+nav {
+    padding: 1rem 2rem;
+}
+.links a {
+    font-weight: 700;
+    margin-left: 1rem;
+}
+.links a:hover {
+    color: var(--purple);
+}
+.presentation_container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.presentation_container .iconPresentation {
+    width: 5rem;
+    height: 5rem;
+}
+/*presentation*/
+.presentation-text {
+    padding: 2rem 4rem;
+    text-align: center;
+}
+.presentation-text .title {
+    font-size: var(--lg);
+    margin-bottom: 1.5rem;
+}
+.presentation-text .title span {
+    color: var(--purple);
+}
+.presentation-text .desc {
+    font-size: var(--sm);
+    
+    line-height: 2.4rem;
+}
+/*img_container*/
+.img_container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.img_container img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+
+/*------------projects---------------*/
+.projects {
+    width: 100%;
+    background-color: #f7ebe8;
+    margin: 0 auto; 
+    padding:  4rem 2rem;
+    text-align: center;
+}
+.projects h2 {
+    font-size: var(--md);
+    margin-bottom: 2rem;
+}
+.project {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project div a {
+    font-size: var(--sm);
+    font-weight: 700;
+}
+.project div a:hover {
+    color: var(--purple);
+}
+.project div {
+    width: 75%;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project_img {
+    width: 75%;
+    border-radius: 1rem;
+}
+.iconGit {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+/**/
+.contact {
+    display: flex;
+    padding: 2rem 4rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact h2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    font-size: var(--md);
+}
+.contact h2 span {
+    color: var(--purple);
+}
+.social-media_container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    header {
+        display: flex;
+    }
+    .presentation_container {
+        width: 70%;
+    }
+    .img_container {
+        padding: 2rem 0;
+        width: 30%;
+    }
+    .projects_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    .projects {
+        width: 100%;
+    }
+    .project {
+        width: 40%;
+    }
+    .project_img, .project div{
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    .presentation-text{
+        display: flex;
+        height: 60%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .presentation-text .title {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .presentation_container{
+        width: 40%;
+    }
+    .img_container {
+        padding: 2rem 0;
+        width: 30%;
+    }
+    .projects {
+        width: 100%;
+    }
+    .project {
+        width: 20%;
+    }
+
+}
