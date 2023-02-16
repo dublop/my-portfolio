@@ -91,15 +91,23 @@ nav {
     font-size: var(--md);
     margin-bottom: 2rem;
 }
-.project {
+.projects_container {
     width: 100%;
+    display: grid;
+    place-items: center;
+}
+.project {
+    width: 90%;
     margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: white;
+    -webkit-box-shadow: 5px 3px 25px 11px rgba(0,0,0,0.11); 
+    box-shadow: 5px 3px 25px 11px rgba(0,0,0,0.11);
+    padding: 1rem;
+    border-radius: 2rem;
+    
 }
 .project div a {
+    text-transform: capitalize;
     font-size: var(--sm);
     font-weight: 700;
 }
@@ -107,15 +115,15 @@ nav {
     color: var(--purple);
 }
 .project div {
-    width: 75%;
-    padding: 0 1rem;
+    width: 100%;
+    padding: 0 2rem;
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .project_img {
-    width: 75%;
+    width: 100%;
     border-radius: 1rem;
 }
 .iconGit {
@@ -172,7 +180,7 @@ nav {
         width: 100%;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     header {
         display: flex;
         justify-content: center;
