@@ -54,6 +54,8 @@ nav {
 .presentation-text {
     padding: 2rem 4rem;
     text-align: center;
+    display: grid;
+    place-items: center;
 }
 .presentation-text .title {
     font-size: var(--lg);
@@ -66,6 +68,25 @@ nav {
     font-size: var(--sm);
     
     line-height: 2.4rem;
+}
+.downloadButton {
+    display: inline-block;
+    width: 50%;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--purple);
+    border-radius: 1rem;
+    font-weight: 700;
+    color: white;
+    border: 1px solid transparent;
+    transition: 0.3s ease-in;
+    -webkit-box-shadow: 5px 3px 25px 11px rgba(0,0,0,0.11); 
+    box-shadow: 5px 3px 25px 7px rgba(0,0,0,0.11);
+}
+.downloadButton:hover {
+    background-color: white;
+    color: var(--purple);
+    border: 1px solid var(--purple);
 }
 /*img_container*/
 .img_container {
