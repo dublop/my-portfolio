@@ -229,5 +229,9 @@ nav {
     .project {
         width: 20%;
     }
+    .project img {
+        width: 200px;
+        height: 200px;
+    }
 
 }
