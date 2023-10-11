@@ -125,7 +125,7 @@ nav {
     background-color: white;
     -webkit-box-shadow: 5px 3px 25px 11px rgba(0,0,0,0.11); 
     box-shadow: 5px 3px 25px 11px rgba(0,0,0,0.11);
-    padding: 1rem;
+    padding: 0rem;
     border-radius: 2rem;
     
 }
@@ -139,15 +139,14 @@ nav {
 }
 .project div {
     width: 100%;
-    padding: 0 2rem;
-    margin-top: 1rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .project_img {
-    width: 100%;
-    border-radius: 1rem;
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
     aspect-ratio: 4/3;
 }
 .iconGit {
